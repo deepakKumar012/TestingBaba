@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="LoginTest" enabled="true">
+	  <parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="tests.LoginTest"/>
+    </classes>
+  </test> 
+  <test name="TextBoxTest" enabled="false">
+	  <groups>
+		  <run>
+			  <include name="regression"></include>
+		  </run>
+	  </groups> 
+	     <classes>
+      <class name="tests.TextBoxtest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="CheckboxTEST" enabled="false">
+    <classes>
+      <class name="tests.CheckboxTest"/>
+    </classes>
+  </test> 
+  
+  <test name="NestedFrametest" enabled="false">
+    <classes>
+      <class name="tests.NestedFrameTest"/>
+    </classes>
+  </test> 
+  <test name="Linktest" enabled="false">
+    <classes>
+      <class name="tests.LinkTest"/>
+    </classes>
+  </test> 
+  <test name="UploadTest" enabled="false">
+    <classes>
+      <class name="tests.UploadTest"/>
+    </classes>
+  </test> 
+</suite> <!-- Suite -->
